@@ -4540,7 +4540,7 @@ image-extensions@~1.1.0:
   resolved "https://registry.yarnpkg.com/image-extensions/-/image-extensions-1.1.0.tgz#b8e6bf6039df0056e333502a00b6637a3105d894"
   integrity sha1-uOa/YDnfAFbjM1AqALZjejEF2JQ=
 
-image-size@1.0.0:
+image-size@1.0.0, image-size@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-1.0.0.tgz#58b31fe4743b1cec0a0ac26f5c914d3c5b2f0750"
   integrity sha512-JLJ6OwBfO1KcA+TvJT+v8gbE6iWbj24LyDNFgFEN0lzegn6cC6a/p3NIDaepMsJjQjlUWqIC7wJv8lBFxPNjcw==
@@ -4553,13 +4553,6 @@ image-size@^0.8.1:
   integrity sha512-SMtq1AJ+aqHB45c3FsB4ERK0UCiA2d3H1uq8s+8T0Pf8A3W4teyBQyaFaktH6xvZqh+npwlKU7i4fJo0r7TYTg==
   dependencies:
     queue "6.0.1"
-
-image-size@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/image-size/-/image-size-1.0.0.tgz#58b31fe4743b1cec0a0ac26f5c914d3c5b2f0750"
-  integrity sha512-JLJ6OwBfO1KcA+TvJT+v8gbE6iWbj24LyDNFgFEN0lzegn6cC6a/p3NIDaepMsJjQjlUWqIC7wJv8lBFxPNjcw==
-  dependencies:
-    queue "6.0.2"
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -5630,7 +5623,7 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
-lodash.merge@^4.4.0:
+lodash.merge@^4.4.0, lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
@@ -6385,7 +6378,7 @@ ncp@~2.0.0:
   resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
   integrity sha1-GVoh1sRuNh0vsSgbo4uR6d9727M=
 
-needle@^2.2.1:
+needle@^2.2.1, needle@^2.5.2:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/needle/-/needle-2.6.0.tgz#24dbb55f2509e2324b4a99d61f413982013ccdbe"
   integrity sha512-KKYdza4heMsEfSWD7VPUIz3zX2XDwOyX2d+geb4vrERZMT5RMU6ujjaD+I5Yr54uZxQ2w6XRTAhHBbSCyovZBg==
@@ -7489,7 +7482,16 @@ printj@~1.1.0:
   resolved "https://registry.yarnpkg.com/printj/-/printj-1.1.2.tgz#d90deb2975a8b9f600fb3a1c94e3f4c53c78a222"
   integrity sha512-zA2SmoLaxZyArQTOPj5LXecR+RagfPSU5Kw1qP+jkWeNlrq+eJZyY2oS68SU1Z/7/myXM4lo9716laOFAVStCQ==
 
-probe-image-size@5.0.0, probe-image-size@^5.0.0:
+probe-image-size@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/probe-image-size/-/probe-image-size-7.1.0.tgz#2b0f8474c9c0c68f3b640e353fe64127585f0f6b"
+  integrity sha512-T7F4ZF4iWQJWhj/ijPyh88fHen9UtaUwtV+QMZ1NkmpUSDHmfYlZgRUTOcFKnqi95I6kpGBQ+3pF1dCtVmDeIg==
+  dependencies:
+    lodash.merge "^4.6.2"
+    needle "^2.5.2"
+    stream-parser "~0.3.1"
+
+probe-image-size@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/probe-image-size/-/probe-image-size-5.0.0.tgz#1b87d20340ab8fcdb4324ec77fbc8a5f53419878"
   integrity sha512-V6uBYw5eBc5UVIE7MUZD6Nxg0RYuGDWLDenEn0B1WC6PcTvn1xdQ6HLDDuznefsiExC6rNrCz7mFRBo0f3Xekg==
